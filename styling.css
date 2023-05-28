@@ -163,7 +163,7 @@ header {
 }
 
 .courseHighlight div h2 {
-  font-size: 3.052rem;
+  font-size: 2.441rem;
   line-height: 4rem;
 }
 
@@ -220,7 +220,6 @@ footer div {
   }
 
   .courseHighlight div h2 {
-    /* font-size: 1.953rem; */
     font-size: 1.602rem;
 
     line-height: 3rem;
