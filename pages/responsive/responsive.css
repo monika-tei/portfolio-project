@@ -1,0 +1,412 @@
+/* Tip, copy paste from 13c.01.01 & 13c.01.02 to get fonts and colors up and running ... */
+@import url(//db.onlinewebfonts.com/c/38d41072aa88a50711d4d50dd0d50f6b?family=Neue+Machina);
+@import url("https://fonts.cdnfonts.com/css/euclid-circular-b");
+@import url("https://fonts.cdnfonts.com/css/mophend");
+
+:root {
+  --text-body: "Euclid Circular B";
+  --text-display: "Mophend", sans-serif;
+  --text-header: "Neue Machina";
+
+  /*Colors*/
+  --clr-purple: #dcc0e8;
+  --clr-black: #170404;
+  --clr-neutral: #f1f1f1;
+  --clr-beige: #dedcd0;
+  --clr-blue: #5a88ff;
+  --clr-yellow: #efffb9;
+  --clr-pink: #eacaca;
+  --switch: #170404;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+p {
+  font-family: var(--text-body);
+}
+h2,
+h3 {
+  font-family: var(--text-header);
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 2.5rem;
+  background-color: var(--clr-neutral);
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  margin-right: 20px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+nav button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+/* Header */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4rem;
+  background-color: var(--clr-neutral);
+}
+
+.header_text {
+  width: 50%;
+  margin: 2rem;
+}
+
+.header_text h1 {
+  font-size: 2.281rem;
+  margin-bottom: 1.5rem;
+}
+
+.header_text p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+}
+
+.header_graphics {
+  background-image: url(https://images.unsplash.com/photo-1504474298956-b1812fe43d92?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80);
+  width: 40%;
+  min-height: 400px;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Advantages */
+#advantages {
+  padding: 4rem;
+  background-color: var(--clr-pink);
+}
+
+.advantages_cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.advantages_card {
+  flex: 1 1 350px;
+  margin: 1rem;
+  padding: 1.2rem;
+  background-color: white;
+  border-radius: 10px;
+}
+/* .advantages_card:last-child {
+  flex-grow: 0; /* Prevent further growth */
+
+.advantages_card_graphics {
+  background-image: url(https://images.unsplash.com/photo-1557409518-691ebcd96038?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80);
+  min-height: 250px;
+  border-radius: 10px;
+
+  background-size: cover;
+  background-position: center;
+}
+
+.advantages_card_text h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* Product */
+#product {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 4rem;
+  justify-content: center;
+}
+
+.productContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2rem;
+  padding: 2rem;
+  width: 80vw;
+}
+
+.product_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.product_graphics {
+  background-image: url(https://images.unsplash.com/photo-1520163004802-7aadfcd17529?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=875&q=80);
+  min-height: 400px;
+  background-size: cover;
+  background-position: center;
+}
+
+.product_text h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* Highlight */
+.highlight {
+  text-align: center;
+  padding: 4rem;
+  justify-content: center;
+  background-color: var(--clr-pink);
+}
+
+.highlight h2 {
+  font-size: 1.953rem;
+  margin-bottom: 1.563rem;
+}
+
+.highlight_small_cards {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.highlight_small_cards div {
+  flex: 1;
+  margin: 0 10px;
+  padding: 1.5rem;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.highlight_small_cards h3 {
+  font-size: 1.563rem;
+  margin-bottom: 1rem;
+}
+
+.highlight button {
+  width: 200px;
+}
+/*request button*/
+button {
+  /* display: inline-block; */
+  /* height: 2rem; */
+  padding: 0.7rem 1rem;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  background-color: var(--clr-black);
+  color: var(--clr-yellow);
+  font-family: var(--text-header);
+  font-size: 0.889rem;
+}
+
+button:hover {
+  background-color: var(--clr-yellow);
+  color: var(--clr-black);
+  transition: 0.4s all ease-out;
+}
+
+/* Team */
+#team {
+  padding: 4rem;
+  background-color: var(--clr-neutral);
+}
+
+#team a {
+  text-decoration: none;
+}
+
+.teamContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2rem;
+  padding: 2rem;
+  width: 80vw;
+  margin-bottom: 2rem;
+  justify-items: center;
+  align-items: center;
+}
+
+.teamContainer li {
+  list-style-type: none;
+  font-family: var(--text-body);
+  line-height: 1.5rem;
+}
+
+.team_graphics {
+  background-image: url(https://images.unsplash.com/photo-1525230071276-4a87f42f469e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80);
+  /* width: 50%; */
+  width: 100%;
+  min-height: 400px;
+  background-size: cover;
+}
+
+/*Contact*/
+
+#contact {
+  background-color: white;
+  padding: 4rem;
+}
+
+.formContainer {
+  width: 60vw;
+  margin: 0 auto;
+}
+
+#contact_form {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two columns */
+  grid-gap: 1rem; /* Gap between grid items */
+  max-width: 60%; /* Maximum width of the form */
+  margin: 0 auto; /* Center the form */
+}
+
+.form_group {
+  margin-bottom: 1.5rem;
+}
+
+.form_group:nth-child(3) {
+  grid-column: 1 / span 2; /* Message textarea spans across two columns */
+}
+
+button[type="submit"] {
+  grid-column: 1 / span 2; /* Submit button spans across two columns */
+}
+
+label {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 0.5rem;
+  box-sizing: border-box;
+}
+
+button[type="submit"] {
+  background-color: var(--clr-purple);
+  color: white;
+  padding: 0.5rem 2rem;
+  border: none;
+  cursor: pointer;
+  transition: 0.5s all ease-out;
+}
+
+button[type="submit"]:hover {
+  background-color: var(--clr-black);
+}
+
+/*FOOTER area*/
+
+footer {
+  display: flex;
+  padding: 5vh 2rem;
+  align-items: top;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: var(--clr-purple);
+}
+
+footer section {
+  display: flex;
+  max-width: 50vw;
+  align-items: top;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+footer section div {
+  margin: 0px 1rem 1rem 1rem;
+}
+
+footer h2,
+h3 {
+  padding-bottom: 1rem;
+}
+
+footer h2 {
+  font-size: 2.441rem;
+}
+
+footer li {
+  list-style-type: none;
+  padding-bottom: 0.25rem;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer a:hover {
+  font-weight: 600;
+  transition: 0.5 all ease-out;
+}
+
+/*Responsive*/
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+  }
+
+  .header_text {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .header_graphics {
+    width: 100%; /* Set the image width to 40% for larger screens */
+    height: auto; /* Allow the image height to adjust based on its content */
+  }
+
+  .productContainer {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1rem;
+  }
+
+  .product_graphics {
+    min-height: 200px;
+  }
+
+  .teamContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .team_graphics,
+  .team_text {
+    width: 100%;
+  }
+
+  #contact_form {
+    max-width: 90%;
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .formContainer {
+    width: 100%;
+  }
+
+  .form_group {
+    margin-bottom: 1.5rem;
+  }
+}

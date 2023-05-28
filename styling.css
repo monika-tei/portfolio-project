@@ -1,0 +1,229 @@
+:root {
+  /* Color Properties */
+  --color-black: #170404;
+  --color-neutral: #f1f1f1;
+  --color-beige: #dedcd0;
+  --color-blue: #5a88ff;
+  --color-yellow: #efffb9;
+  --color-pink: #eacaca;
+  /* Global Fonts */
+  --text-body: "Syne", sans-serif;
+  --text-display: "Mophend", sans-serif;
+  --text-header: "Neue Machina";
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+html {
+  font-size: 16px;
+  line-height: 18px;
+  font-family: var(--text-body);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--text-header);
+  color: var(--color-black);
+
+  padding-bottom: 2rem;
+  line-height: 1.5rem;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 2.5rem;
+  background-color: var(--clr-neutral);
+}
+
+nav a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--color-black);
+  margin-right: 1rem;
+  font-size: 0.8rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+a:hover {
+  transition: 0.8s all ease-out;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/*Header*/
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3rem;
+  background-color: var(--clr-neutral);
+}
+
+.header_text {
+  width: 50%;
+  margin: 2rem;
+}
+
+.header_text h1 {
+  font-size: 7.478rem;
+  line-height: 5.8rem;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+}
+
+.header_text p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+}
+
+/* .header_graphics {
+  background-image: url(https://images.unsplash.com/photo-1504474298956-b1812fe43d92?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80);
+  width: 40%;
+  min-height: 400px;
+  background-size: cover;
+  background-position: center;
+} */
+
+/* Project cards */
+#assignments {
+  padding: 4rem;
+  background-color: var(--clr-pink);
+}
+
+.assignment_cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.assignment_card {
+  flex: 1 1 350px;
+  margin: 1rem;
+  padding: 1.2rem;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.assignment_card_graphics {
+  background-image: url(https://images.unsplash.com/photo-1557409518-691ebcd96038?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80);
+  min-height: 250px;
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 1.2rem;
+}
+
+.assignment_card_text h3 {
+  font-size: 1.602rem;
+}
+
+/*introduction*/
+#introduction {
+  display: flex;
+  min-height: 65vh;
+  padding-left: 2rem;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(244, 244, 244);
+}
+
+.intro_text {
+  width: 60vw;
+  min-width: 300px;
+  font-size: 1.44rem;
+  line-height: 1.7rem;
+}
+
+/*Highlights*/
+
+.courseHighlight {
+  display: flex;
+  min-height: 70vh;
+  padding: 2rem;
+  align-items: center;
+  justify-content: space-around;
+  background-color: var(--color-pink);
+}
+
+.courseHighlight div {
+  width: 80vw;
+}
+
+.courseHighlight div h2 {
+  font-size: 3.052rem;
+  line-height: 4rem;
+}
+
+/*Footer*/
+footer {
+  width: 100%;
+  padding: 8vh 2rem;
+  background-color: var(--color-black);
+}
+footer h3 {
+  color: white;
+}
+footer div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  /* margin: 0 auto; */
+  margin: 0px 1rem 1rem 1rem;
+  color: white;
+}
+
+:is(footer section div ul) li a {
+  text-decoration: none;
+  color: white;
+  line-height: 1.5rem;
+}
+
+/*res*/
+@media (max-width: 768px) {
+  .header_text {
+    width: 80%;
+  }
+
+  .header_text h1 {
+    /* font-size: 1.777rem; */
+    font-size: 2.369rem;
+
+    line-height: 3rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+  }
+
+  .header_text p {
+    font-size: 0.937rem;
+  }
+
+  .intro_text {
+    font-size: 0.937rem;
+  }
+
+  #assignments {
+    padding: 1.5rem;
+  }
+
+  .courseHighlight div h2 {
+    /* font-size: 1.953rem; */
+    font-size: 1.602rem;
+
+    line-height: 3rem;
+    color: #5a88ff;
+  }
+}
